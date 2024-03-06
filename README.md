@@ -9,7 +9,7 @@
 
 ![portfolio-all](./src/img/portfolio-all.png)
 
-Описание проекта
+Описание проектаfi
 Разработайте компонент класса Portfolio, хранящий список фильтров, активный фильтр, а также список проектов.
 
 Сами фильтры отображаются в компоненте без состояния Toolbar, которому от Portfolio мы передаём три свойства:
@@ -41,6 +41,8 @@ onSelectFilter(filter) — обработчик события, который �
 portfolio-cards.png
 
 Набор данных для отображения:
+
+```
 
 [{
   img: "https://raw.githubusercontent.com/netology-code/ra16-homeworks/master/events-state/filter/img/mon.jpg",
@@ -94,3 +96,4 @@ portfolio-cards.png
   img: "https://raw.githubusercontent.com/netology-code/ra16-homeworks/master/events-state/filter/img/place200x290_3.png",
   category: "Flayers"
 }]
+```
