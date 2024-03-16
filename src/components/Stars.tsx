@@ -36,7 +36,7 @@ const Stars:React.FC<StarsProps> = ({ count }) => {
        
           <div className='button-price'>
           <button>Купить</button>
-          <a className="arrow-right" href="#">ПОДРОБНЕЕ</a>
+          <a className="arrow-right" href="https://mariza0.github.io/react-hw3-props-films">ПОДРОБНЕЕ</a>
           </div>
         </div>
 
