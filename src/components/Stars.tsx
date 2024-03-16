@@ -36,7 +36,7 @@ const Stars:React.FC<StarsProps> = ({ count }) => {
        
           <div className='button-price'>
           <button>Купить</button>
-          <a className="arrow-right" href="">ПОДРОБНЕЕ</a>
+          <a className="arrow-right" href="#">ПОДРОБНЕЕ</a>
           </div>
         </div>
 
@@ -48,4 +48,3 @@ const Stars:React.FC<StarsProps> = ({ count }) => {
   };
   
   export default Stars;
-  
