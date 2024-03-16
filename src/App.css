@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons+Outlined);
 /* .App {
   text-align: center;
 }
@@ -36,6 +38,81 @@
     transform: rotate(360deg);
   }
 } */
+
+.share-movie {
+  color: #999;
+}
+
+.share-movie:hover {
+  cursor: pointer;
+}
+
+
+.movie-picture {
+  /* display: flex; */
+  position: relative;
+  top: -50px; /* Сдвигаем квадрат на 50px вверх от верхней границы контейнера */
+  left: 0; /* Привязываем квадрат к левому краю контейнера */
+  aspect-ratio: 1/1;
+  width: 100px;
+  height: 130px;
+  background-color: rgb(134, 148, 176);
+  margin-right: 20px;
+
+  box-shadow: 0 8px 8px rgba(0, 0, 0.5, 0.5); 
+}
+
+.card-body-stars {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  width: 430px; /* Занимает одну треть ширины */
+  height: 170px;
+  float: left; /* Размещение в ряд по горизонтали */
+  box-sizing: border-box; /* Учитывать padding и border внутри заданной ширины */
+  padding: 20px; /* Отступы внутри карточки */
+  background: rgb(253, 253, 253);
+}
+
+.stars {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.arrow-right {
+  /* font-size: 20px; */
+ align-items: center;
+ color: #999;
+ margin-left: 10px;
+}
+
+.arrow-right::after {
+  content: "\2192"; /* Unicode для стрелки вправо */
+}
+
+.movie-title {
+  font-size: 24px;
+}
+
+.button-price {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heart-btn {
+  color: #999;
+}
+
+.heart-btn:hover {
+  color: #999;
+  cursor: pointer;
+}
+
+
  @import url(https://fonts.googleapis.com/css?family=Muli:400,300italic,300,400italic);
 body,
 html {
@@ -44,6 +121,10 @@ html {
   height: 100%;
   padding: 0;
   overflow-x:hidden;
+}
+
+body {
+  background-color: rgb(251, 237, 220);
 }
 
 .container-main {
@@ -55,6 +136,7 @@ html {
 }
 
 .container {
+  margin-top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -71,8 +153,9 @@ html {
 }
 
 .filters-buttons {
-  display: flex;
-  direction: row;
+  display: inline-block; 
+  /* display: flex;
+  direction: row; */
   margin-bottom: 10px;
   margin-top: 20px;
   
