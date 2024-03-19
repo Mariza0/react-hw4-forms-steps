@@ -136,13 +136,34 @@ body {
 }
 
 .container {
-  margin-top: 60px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+} 
+
+.form {
+  
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 60%;
-} 
+}
+.input-color {
+  font-size: 22px;
+  width: 200px; /* Ширина инпута */
+  height: 40px; /* Высота инпута */
+  text-align: center;
+}
+
+/* .input-color input{
+  width: 100%; 
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px; 
+  box-sizing: border-box; 
+} */
 
 .photos {
   width: 100%;

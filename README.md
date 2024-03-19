@@ -1,43 +1,22 @@
 
-[![Build status](https://ci.appveyor.com/api/projects/status/ujhn67rvt4b6xf4b?svg=true)](https://ci.appveyor.com/project/Mariza0/react-hw3-props-films)
+[![Build status](https://ci.appveyor.com/api/projects/status/ujhn67rvt4b6xf4b?svg=true)](https://ci.appveyor.com/project/Mariza0/react-hw4-forms-hex2rgb)
 
-[ссылка на тестовый проект](https://mariza0.github.io/react-hw3-props-films/) 
+[ссылка на тестовый проект](https://mariza0.github.io/react-hw4-forms-hex2rgb/) 
 
-[ссылка на задание](https://github.com/netology-code/ra16-homeworks/tree/ra-51/props/films)
+[ссылка на задание](https://github.com/netology-code/ra16-homeworks/tree/ra-51/forms/hex2rgb)
 
-## Рейтинг фильмов
-Необходимо реализовать компонент, отображающий рейтинг фильма в виде звёзд: Список фильмов
+## Конвертер цветов из HEX в RGB
+Вам необходимо разработать конвертер цветов из HEX в RGB.
 
-![рейтинг фильмов](./src/img/preview-films.png)
+![Конвертер цветов](/src//img/preview1.png)
 
-### Описание компонента
-Для отображения рейтинга создайте компонент Stars, который принимает следующие атрибуты:
+### Интерфейс конвертера
+При правильном вводе цвета он показывает его представление в формате RGB и меняет цвет фона на заданный: 
 
-count — рейтинг фильма, число, по умолчанию 0.
-Если рейтинг меньше 1 или больше 5, или вообще не число, то компонент не должен иметь какого-либо представления в DOM.
+![Цвет](/src/img/color.png)
 
-Звёзды рейтинга должны быть представлены тегом <ul> с классом card-body-stars. Для отображения символа звезды внутри тега <li> используйте компонент Star.
+Конвертер при вводе неправильного цвета в формате HEX должен сообщать об ошибке: 
 
-Пример использования
-```
-// Внутри App
-return (
-    <Stars count={1}/>
-);
-```
-Компонент должен дать следующий код:
+![Ошибка](/src/img/error.png)
 
-```
-<ul class="card-body-stars u-clearfix">
-    <li>
-        <svg fill="#D3BCA2" height="28" viewBox="0 0 18 18" width="28" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9 11.3l3.71 2.7-1.42-4.36L15 7h-4.55L9 2.5 7.55 7H3l3.71 2.64L5.29 14z"/>
-            <path d="M0 0h18v18H0z" fill="none"/>
-        </svg>
-    </li>
-</ul>
-```
-Реализация
-Необходимо реализовать компонент Stars. Не забудьте, что отдельная звезда должна быть представлена компонентом Star.
-
-Важно: вам нужно реализовать только отображение звёздочек, карточку фильма не нужно.
+Необходимо дожидаться ввода всех семи символов, включая решётку, чтобы принимать решение о том, показывать ошибку или менять цвет фона.
