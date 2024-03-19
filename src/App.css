@@ -117,7 +117,7 @@
 body,
 html {
   margin: 0;
-  font-family: muli;
+  font-family: Helvetica, sans-serif;
   height: 100%;
   padding: 0;
   overflow-x:hidden;
@@ -130,26 +130,76 @@ body {
 .container-main {
   display: flex;
   justify-content: center;
- 
+}
 
+.line-first {
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+}
 
+.line-second {
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+  padding-left: 30px;
+  border: 2px solid #747373;
+  border-radius: 5px;
 }
 
 .container {
-  
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 100vw;
+  /* width: 50vw; */
 } 
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+  align-self: flex-end;
+}
+
+.form-field-summary {
+  display: flex;
+  flex-direction: column;
+  margin-right: 60px;
+}
+.btn-submit {
+  border: 2px solid #242424;
+  border-radius: 5px;
+  height: 38px;
+  align-self: flex-end;
+}
 
 .form {
   
   display: flex;
   flex-direction: column;
 }
+
+.input-data {
+  margin-top: 10px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.tab {
+  margin-right: 50px;
+}
+
+.column {
+  margin-right: 40px;
+  font-size: 24px;
+}
+
 .input-color {
+  
   font-size: 22px;
   width: 200px; /* Ширина инпута */
   height: 40px; /* Высота инпута */
@@ -302,24 +352,29 @@ a:hover {
   text-decoration:underline;
   color:#666;
 }
+
+.data-submitted {
+  margin-top: 20px;
+}
+
 button {
-  background:#929292;
+  background:#ffffff;
   border:none;
   font-weight:400;
-  height:40px;
+  height:20px;
   margin-top:auto;
   margin-bottom:auto;
-  padding-left:25px;
-  padding-right:25px;
+  /* padding-left:25px;
+  padding-right:25px; */
   box-sizing:border-box;
-  color:#fff;
+  /* color:#fff; */
   cursor:pointer;
   -webkit-transition:all .3s ease;
           transition:all .3s ease;
   text-transform: uppercase;
 }
 button:hover {
-  background:#555;
+  /* background:#555; */
   -webkit-transition:all .3s ease;
           transition:all .3s ease;
 }

@@ -1,9 +1,9 @@
 import './App.css';
-import { Converter } from './components/Converter';
+import { Trainers } from './components/Trainers';
 function App() {
   return ( 
  
-    < Converter />
+    < Trainers />
 
   );
 }
